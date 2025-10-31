@@ -19,7 +19,7 @@ gk  Up in a soft-wrapped line
 
 You can also move with directional arrows. If you are just starting, feel free to use any method you're most comfortable with.
 
-I prefer `hjkl` because my right hand can stay in the home row. Doing this decreases the distance from my fingers to surrounding keys. To get used to `hjkl`, I actually had to disable the arrow buttons when starting out, by adding these in `~/.vimrc`:
+I prefer `hjkl` because my right hand can stay in the home row. Doing this decreases the distance from my fingers to the keys I need. To get used to `hjkl`, I actually disabled the arrow buttons when starting out, by adding these in `~/.vimrc`:
 
 ```
 noremap <Up> <NOP>
@@ -42,7 +42,7 @@ set relativenumber number
 
 This displays my current line number and relative line numbers.
 
-It is easy to see why having a number on the left column is useful, but some of you may be asking how having relative numbers on the left column would be useful. Having a relative number allows me to quickly see how many lines apart my cursor is from the target text. With this, I can easily see that my target text is 12 lines below me, so I can do `d12j` to delete them. Otherwise, if I'm on line 69 and my target is on line 81, I have to do mental math (81 - 69 = 12). Doing math while editing takes too much mental resources. The less I have to think about where I need to go, the better.
+It is easy to see why having a number on the left column is useful, but some of you may be asking how having relative numbers on the left column would be useful. Having a relative number allows me to quickly see how many lines apart my cursor is from the target text. With this, I can easily see that my target text is 12 lines below me, so I can do `d12j` to delete it. Otherwise, if I'm on line 69 and my target is on line 81, I have to do mental math (81 - 69 = 12). Doing math while editing takes too much mental resources. The less I have to think about where I need to go, the better.
 
 This is 100% personal preference. Experiment with `relativenumber` / `norelativenumber`, `number` / `nonumber` and use whatever you find most useful!
 
