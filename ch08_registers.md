@@ -24,7 +24,7 @@ Here are the 10 Vim register types:
 
 ## Register Operators
 
-To use registers, you need to first populate them with operators. Here are some operators that store values into registers:
+To use registers, you need to first populate them using operators. Here are some operators that store values into registers:
 
 ```
 y    Yank (copy)
@@ -32,7 +32,7 @@ c    Delete text and start insert mode
 d    Delete text
 ```
 
-There are more operators (like `s` or `x`), but the ones listed above are among the more useful ones. The rule of thumb is that if an operator can remove a piece of text, it probably stores the text to registers.
+There are more operators (like `s` or `x`), but the ones listed above are among the more useful ones. The rule of thumb is that if an operator can remove a piece of text, it probably stores that text to registers.
 
 To paste a text from a register, you can use:
 
@@ -134,7 +134,7 @@ Another example:
 
 ## The Named Register
 
-The named registers are Vim's most versatile register type. It can store yanked, changed, and deleted texts into registers a-z. Unlike the previous 3 register types you've seen, which are automatically populated, you have to explicitly tell Vim to use a given named register, giving you full control over it.
+The named registers are Vim's most versatile register type. It can store yanked, changed, and deleted texts into registers `a-z`. Unlike the previous 3 register types you've seen, which are automatically populated, you have to explicitly tell Vim to use a given named register, giving you full control over it.
 
 To yank a word into register a, you can do it with `"ayiw`.
 - `"a` tells Vim that the next action (delete / change / yank) will be stored in register a.
@@ -228,7 +228,7 @@ There is a plugin called [vim-peekaboo](https://github.com/junegunn/vim-peekaboo
 
 The named registers are not just for storing text. They can also execute macros with `@`. I will go over macros in the next chapter.
 
-Keep in mind since macros are stored inside Vim registers, you can accidentally overwrite the stored text with macros. If you store the text "Hello Vim" in register a and you later record a macro in the same register (`qa{macro-sequence}q`), that macro will overwrite the "Hello Vim" text you stored earlier.
+Keep in mind since macros are stored inside Vim registers, you can accidentally overwrite the stored text with macros. If you store the text "Hello Vim" in register a and you later record a macro in the same register (`qa{macro-sequence}q`), that macro will overwrite the "Hello Vim" text that you stored earlier.
 
 ## Clearing a Register
 
